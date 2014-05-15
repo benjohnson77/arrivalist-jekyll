@@ -2,5 +2,5 @@
 source "https://rubygems.org"
 
 gem 'jekyll'
-gem 'rack-recaptcha'
+gem 'rack-recaptcha', :require => 'rack/recaptcha'
 
