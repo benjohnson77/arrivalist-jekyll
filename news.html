@@ -1,0 +1,42 @@
+---
+layout: default
+title: Arrivalist – Studying The Way Media Moves US
+---
+
+<section id="contact">
+	<div class="containter jumbotron">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-1">
+			  <hr class="seporator" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-4">
+			  <h1>News</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="news-index">
+	<div class="container">
+		{% for post in site.categories["news"] %}
+		<div class="row">
+			<div class="col-md-3">
+				<div class="pull-right post-date">
+					{{ post.date | date: "%b %d, %Y"  }}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3 class="post-title">
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</h3>
+				<p>
+					{{ post.body }}
+				</p>	
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+</section>		
+
