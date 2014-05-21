@@ -83,12 +83,8 @@ body h1,h2,h3,h4{
 #overview {
 	padding: 80px 10px;
 	text-align: center;
-	background: #002843;
-	/*background: url(/images/pin-lg.png) #002843 no-repeat center;
-		-webkit-background-size: 50%;
-	-moz-background-size: 50%;
-	-o-background-size: 50%;
-	background-size: 50%;*/
+	background: url(/images/grade-black-blue.png) #002843 repeat-x;
+	
 }
 
 #overview p{
@@ -100,6 +96,12 @@ body h1,h2,h3,h4{
 #analytics{
 	padding: 50px 10px;
 	background: url(/images/pin.png) #64c110 no-repeat right top;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #connected {
