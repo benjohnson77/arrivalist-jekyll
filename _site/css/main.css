@@ -46,7 +46,7 @@ body h1,h2,h3,h4{
 
 #home {
 	height: 550px;
-	padding-top: 40px;
+	padding-top: 90px;
 }
 .page-welcome {
 	width: 100%;
@@ -61,11 +61,19 @@ body h1,h2,h3,h4{
 }
 .jumbotron {
 	background: inherit !important;	
+	padding:0px !important;
 	color: #ffffff;
 } 
 .jumbotron h1{	
 	color: #ffffff !important;
-} 
+}
+.jumbotron p{	
+	color: #ffffff !important;
+	font-family: 'Museo_Slab' !important;
+	display: inline-block;
+	font-size:18px !important;
+	padding: 10px ;
+}  
 
 .seporator {
 	height: 10px;
@@ -76,17 +84,27 @@ body h1,h2,h3,h4{
 	padding: 80px 10px;
 	text-align: center;
 	background: #002843;
+	/*background: url(/images/pin-lg.png) #002843 no-repeat center;
+		-webkit-background-size: 50%;
+	-moz-background-size: 50%;
+	-o-background-size: 50%;
+	background-size: 50%;*/
 }
+
+#overview p{
+	font-size: 15px;
+}
+
+
 
 #analytics{
 	padding: 50px 10px;
-	background: #64c110;
+	background: url(/images/pin.png) #64c110 no-repeat right top;
 }
 
 #connected {
 	padding:50px 0px 0px 0px;
-	background: #4cbcfc;
-
+	background: url(/images/pin.png) #4cbcfc no-repeat left top;
 }
 
 section#overview i {
