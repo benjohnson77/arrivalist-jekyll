@@ -6,5 +6,5 @@ use Rack::Recaptcha, :public_key => 'MyPublicKey', :private_key => 'TheS3cr3tS3c
 helpers Rack::Recaptcha::Helpers  
 enable :sessions
 
-require './application.rb'  
+require './application'  
 run Sinatra::Application

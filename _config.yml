@@ -1,2 +1,3 @@
 source: .     
 destination: _site
+exclude: [README.md, config.rb, config.ru, application.rb, Gemfile, Gemfile.lock, Rakefile]
