@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem 'rake'
 gem 'jekyll'
-gem 'rack-jekyll'
+gem 'rack-recaptcha', :require => 'rack/recaptcha'
 gem 'sinatra'
 gem 'stringex'
 gem 'pony'
