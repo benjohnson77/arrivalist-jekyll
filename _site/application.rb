@@ -43,6 +43,10 @@ post '/send_email' do
     #end
 end
 
+get '/test' do 
+  stuff = "sinatra is running #{Date.today.to_s}"
+end  
+
 before do  
     response.headers['Cache-Control'] = 'public, max-age=36000'
 end

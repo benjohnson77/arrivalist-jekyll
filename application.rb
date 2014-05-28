@@ -17,10 +17,10 @@ post '/send_email' do
     #if session[:captcha]
     #  session[:captcha] = false
       res = Pony.mail(
-    :from => params[:name] + "<" + params[:email] + ">",
+    :from => "#{params[:email]}",
     :to => 'cree@arrivalist.com, benjaminrjohnson99@gmail.com',
     :subject => "Message from your awesome website :)",
-    :body => params[:message],
+    :body => "#{params[:name]} from #{params[:company]} sent: #{params[:message]}",
     :port => '587',
     :via => :smtp,
     :via_options => {
@@ -42,6 +42,10 @@ post '/send_email' do
     #  { :message => 'failure' }.to_json
     #end
 end
+
+get '/test' do 
+  stuff = "sinatra is running #{Date.today.to_s}"
+end  
 
 before do  
     response.headers['Cache-Control'] = 'public, max-age=36000'

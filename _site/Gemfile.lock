@@ -42,10 +42,17 @@ GEM
       celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
     mercenary (0.3.3)
+    mime-types (1.25.1)
     nio4r (1.0.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
+    polyglot (0.3.4)
+    pony (1.8)
+      mail (>= 2.0)
     posix-spawn (0.3.8)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
@@ -71,6 +78,9 @@ GEM
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -78,6 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  pony
   rack-recaptcha
   rake
   sinatra

@@ -7,4 +7,5 @@ gem 'jekyll'
 gem 'rack-recaptcha', :require => 'rack/recaptcha'
 gem 'sinatra'
 gem 'stringex'
+gem 'pony'
 

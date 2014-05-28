@@ -18,31 +18,13 @@ $(document).ready(function() {
  
   });
  
-});
-
-
-  // function showRecaptcha(element) {
-  //    Recaptcha.create("MyPublicKey", element, {
-  //      theme: "red",
-  //      callback: Recaptcha.focus_response_field});
-  //  }
-  $(document).ready(function(){
- //   showRecaptcha('recaptcha_div');
 
     $("#form").submit(function(ev){
         ev.preventDefault();
-        
-        $.ajax({
-          type: "post",
-          url: "/send",
-          data: $('#form').serialize(),
-          dataType: "json",
-          success: function(response) {
-        if(response.message === "success") {
           $.ajax({
               type: "post",
               url: "/send_email",
-              data: $('#form').serialize(),
+              data: $(this).serialize(),
               dataType: "json",
               success: function(response) {
               $('#form').html("<div id='message'></div>");
@@ -57,6 +39,6 @@ $(document).ready(function() {
               $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
               } 
           });
-        
-    });
-  });
+      });
+    
+});
