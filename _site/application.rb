@@ -48,7 +48,7 @@ before do
 end
 
 not_found do  
-    File.read('_site/404.html')
+    File.read('index.html')
 end
 
 get '/*' do  
