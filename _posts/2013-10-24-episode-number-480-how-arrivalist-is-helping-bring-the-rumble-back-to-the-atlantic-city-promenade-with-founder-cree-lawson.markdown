@@ -4,6 +4,9 @@ title: "Episode #480: How Arrivalist is helping bring the rumble back to the Atl
 date: 2013-10-24 14:34
 comments: true
 categories: news
+tags: untether
+source: //untether.tv/2013/episode-480-how-arrivalist-is-helping-bring-the-rumble-back-to-the-atlantic-city-promenade-with-founder-cree-lawson/
+source_image: /images/untetherlogo.png
 ---
 
 **Episode #480**

@@ -2,21 +2,7 @@
 layout: default
 title: Arrivalist – Studying The Way Media Moves US
 ---
-
-<section id="contact">
-	<div class="containter jumbotron">
-		<div class="row">
-			<div class="col-md-offset-2 col-md-1">
-			  <hr class="seporator" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-2 col-md-4">
-			  <h1>News</h1>
-			</div>
-		</div>
-	</div>
-</section>
+{% include news_heading.html %}
 <section id="news-index">
 	<div class="container">
 		{% for post in site.categories["news"] %}
@@ -34,9 +20,13 @@ title: Arrivalist – Studying The Way Media Moves US
 					{{ post.body }}
 				</p>	
 			</div>
+			<div class="col-md-3 ">
+				<a  href="{{ post.source }}" target="_blank">
+					<img class="post-image" src="{{ post.source_image}}"></img>
+				</a>
+			</div>
 		</div>
 		{% endfor %}
 	</div>
-
 </section>		
 

@@ -4,6 +4,8 @@ title: "Arrivalist Hopes to Help Tourism Boards Calculate Whether Marketing Actu
 date: 2014-03-31 09:00
 comments: true
 categories: news
+source: //skift.com/2014/03/31/arrivalist-hopes-to-help-tourism-boards-calculate-whether-marketing-actually-turns-into-visits/
+source_image: /images/skift-logo.png
 ---
 
 ####Tourism boards around the world typically don’t have robust booking sites of their own, and this can lead to a gap in measuring the effectiveness of their advertising.

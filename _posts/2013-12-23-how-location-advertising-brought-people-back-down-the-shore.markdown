@@ -4,6 +4,8 @@ title: "How Location Advertising Brought People Back ‘Down the Shore’"
 date: 2013-12-23 14:27
 comments: true
 categories: news
+source: //www.madavemobile.com/?p=13441
+source_image: /images/mad-ave-mobile-logo.png
 ---
 
 After Hurricane Sandy struck the Atlantic Coast in the fall of 2012, New Jersey’s Atlantic City saw both a significant number of tourists canceling plans to visit town as well as a drop-off in new bookings.

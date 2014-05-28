@@ -1,23 +1,14 @@
 ---
 layout: default
 ---
-<section id="contact">
-	<div class="containter jumbotron">
-		<div class="row">
-			<div class="col-md-offset-1 col-md-1">
-			  <hr class="seporator" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-1 col-md-4">
-			  <h1>News</h1>
-			</div>
-		</div>
-	</div>
-</section>
+{% include news_heading.html %}
 <section id="news-index">
 	<div class="container">
-	
+		<div class="row">
+			<div class="col-md-offset-3 col-md-2">
+				<a href="/news.html">← Back to List</a>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-3">
 				<div class="pull-right post-date">
@@ -32,6 +23,14 @@ layout: default
 				<p>
 					{{ content }}
 				</p>	
+			</div>
+			<div class="col-md-3 ">
+				<div class="post-image">
+					<a href="{{ page.source }}" target="_blank">
+						<img src="{{ page.source_image}}"></img>
+					</a>
+				</div>
+	
 			</div>
 		</div>
 	</div>

@@ -4,6 +4,8 @@ title: "Mobile Marketer's Mobile Outlook 2014"
 date: 2014-03-7 15:20 
 comments: true
 categories: news
+source: //www.mobilemarketer.com/cms/opinion/classic-guides/17337.html
+source_image: /images/mobile-marketer.gif
 ---
 
 [Please click here to download Mobile Marketer's Mobile Outlook 2014](http://www.mobilemarketer.com/cms/lib/20006.pdf "Please click here to download Mobile Marketer's Mobile Outlook 2014")

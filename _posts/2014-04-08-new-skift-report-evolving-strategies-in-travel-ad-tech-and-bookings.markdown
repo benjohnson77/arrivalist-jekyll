@@ -4,6 +4,8 @@ title: "New Skift Report: Evolving Strategies in Travel Ad Tech and Bookings"
 date: 2014-04-08 15:07
 comments: true
 categories: news
+source: //skift.com/2014/04/08/new-skift-report-evolving-strategies-in-travel-ad-tech-and-bookings/
+source_image: /images/skift-logo.png
 ---
 
 
