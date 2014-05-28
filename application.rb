@@ -1,24 +1,24 @@
 set :public_dir, Proc.new { File.join(root, "_site") }
 
 post '/send' do  
-  if recaptcha_valid?
-    session[:captcha] = true
+  #if recaptcha_valid?
+  #  session[:captcha] = true
     { :message => 'success' }.to_json
-  else
-    session[:captcha] = false
-    { :message => 'failure' }.to_json
-  end
+  #else
+  #  session[:captcha] = false
+  #  { :message => 'failure' }.to_json
+  #end
 end
 
 post '/send_email' do  
     require 'pony'
     require 'json'
 
-    if session[:captcha]
-      session[:captcha] = false
+    #if session[:captcha]
+    #  session[:captcha] = false
       res = Pony.mail(
     :from => params[:name] + "<" + params[:email] + ">",
-    :to => 'me@mydomain.com',
+    :to => 'cree@arrivalist.com, benjaminrjohnson99@gmail.com',
     :subject => "Message from your awesome website :)",
     :body => params[:message],
     :port => '587',
@@ -38,9 +38,9 @@ post '/send_email' do
       else
       { :message => 'failure' }.to_json
       end
-    else
-      { :message => 'failure' }.to_json
-    end
+    #else
+    #  { :message => 'failure' }.to_json
+    #end
 end
 
 before do  
