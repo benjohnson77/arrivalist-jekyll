@@ -21,7 +21,6 @@ post '/send_email' do
     :to => 'cree@arrivalist.com, benjaminrjohnson99@gmail.com',
     :subject => "Message from your awesome website :)",
     :body => "#{params[:name]} from #{params[:company]} sent: #{params[:message]}",
-    :port => '587',
     :via => :smtp,
     :via_options => {
       :address              => 'smtp.sendgrid.net',

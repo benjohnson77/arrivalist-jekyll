@@ -17,11 +17,10 @@ post '/send_email' do
     #if session[:captcha]
     #  session[:captcha] = false
       res = Pony.mail(
-    :from => params[:name] + "<" + params[:email] + ">",
+    :from => "#{params[:email]}",
     :to => 'cree@arrivalist.com, benjaminrjohnson99@gmail.com',
     :subject => "Message from your awesome website :)",
-    :body => params[:message],
-    :port => '587',
+    :body => "#{params[:name]} from #{params[:company]} sent: #{params[:message]}",
     :via => :smtp,
     :via_options => {
       :address              => 'smtp.sendgrid.net',
