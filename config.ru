@@ -1,10 +1,11 @@
-require 'rubygems'  
-require 'sinatra'  
-require 'rack/recaptcha'
+require "rubygems"
+require "bundler"
+Bundler.require
 
-use Rack::Recaptcha, :public_key => 'MyPublicKey', :private_key => 'TheS3cr3tS3cr3tKey'  
-helpers Rack::Recaptcha::Helpers  
-enable :sessions
+require 'rack-livereload'
+use Rack::LiveReload
 
 require './application'  
 run Sinatra::Application
+
+

@@ -9,3 +9,9 @@ gem 'sinatra'
 gem 'stringex'
 gem 'pony'
 
+group :development, :test do
+  gem "guard-rack"	
+  gem "guard-livereload"
+  gem "rack-livereload"
+  gem 'guard-jekyll'
+end
