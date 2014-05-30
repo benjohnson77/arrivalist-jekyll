@@ -27,7 +27,7 @@ $(document).ready(function() {
               data: $(this).serialize(),
               dataType: "json",
               success: function(response) {
-              $('#form').html("<div id='message'></div>");
+              $('#contact-form').html("<div id='message'></div>");
               if(response.message === "success") {
                   $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
               } else {
@@ -35,7 +35,7 @@ $(document).ready(function() {
               }
               },
               error: function(xhr, ajaxOptions, thrownError){
-              $('#form').html("<div id='message'></div>");
+              $('#contact-form').html("<div id='message'></div>");
               $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
               } 
           });
