@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
  
 
-    $("#form").submit(function(ev){
+    $("#contact-form").submit(function(ev){
         ev.preventDefault();
           $.ajax({
               type: "post",
