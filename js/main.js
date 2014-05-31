@@ -18,27 +18,27 @@ $(document).ready(function() {
  
   });
  
-
+  $('#form').on("click", ".btn", function() {
     $("#contact-form").submit(function(ev){
-        ev.preventDefault();
-          $.ajax({
-              type: "post",
-              url: "/send_email",
-              data: $(this).serialize(),
-              dataType: "json",
-              success: function(response) {
-              $('#contact-form').html("<div id='message'></div>");
-              if(response.message === "success") {
-                  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
-              } else {
-                  $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
-              }
-              },
-              error: function(xhr, ajaxOptions, thrownError){
-              $('#contact-form').html("<div id='message'></div>");
-              $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
-              } 
-          });
-      });
-    
+      ev.preventDefault();
+        $.ajax({
+            type: "post",
+            url: "/send_email",
+            data: $(this).serialize(),
+            dataType: "json",
+            success: function(response) {
+            $('#contact-form').html("<div id='message'></div>");
+            if(response.message === "success") {
+                $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
+            } else {
+                $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
+            }
+            },
+            error: function(xhr, ajaxOptions, thrownError){
+            $('#contact-form').html("<div id='message'></div>");
+            $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
+            } 
+        });
+    });
+  });
 });
