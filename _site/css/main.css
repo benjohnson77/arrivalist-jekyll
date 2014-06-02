@@ -179,6 +179,10 @@ section#form textarea{
 	height: 169px;
 }
 
+.submit {
+	z-index: 100;
+}
+
 .location {
 	padding-top:100px;
 }

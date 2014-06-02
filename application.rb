@@ -1,6 +1,7 @@
 set :public, Proc.new { File.join(root, "_site") }
 
-post '/send' do  
+post '/send' do 
+  cache_control :no_cache   
   #if recaptcha_valid?
   #  session[:captcha] = true
     { :message => 'success' }.to_json
@@ -10,13 +11,14 @@ post '/send' do
   #end
 end
 
-post '/send_email' do  
+post '/send_email' do 
+    response.headers['Cache-Control'] = 'no-cache'
     require 'pony'
     require 'json'
 
     #if session[:captcha]
     #  session[:captcha] = false
-      res = Pony.mail(
+    res = Pony.mail(
     :from => "#{params[:email]}",
     :to => 'cree@arrivalist.com, benjaminrjohnson99@gmail.com',
     :subject => "Message from your awesome website :)",
@@ -47,11 +49,11 @@ get '/test' do
 end  
 
 before do  
-    response.headers['Cache-Control'] = 'public, max-age=36000'
+    #response.headers['Cache-Control'] = 'public, max-age=36000'
 end
 
 not_found do  
-    File.read('index.html')
+    File.read('_site/404.html')
 end
 
 get '/*' do  

@@ -13,19 +13,13 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
     <link rel="stylesheet" href="/css/owl.carousel.css">
-	
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="/js/gen_validatorv4.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript">
-        WEB_SOCKET_SWF_LOCATION = "/__rack/WebSocketMain.swf";
-    </script>
-    <script type="text/javascript" src="/__rack/swfobject.js"></script>
-    <script type="text/javascript" src="/__rack/web_socket.js"></script>
-
-    <script type="text/javascript" src="/__rack/livereload.js?host=localhost"></script>
-
+        
 </head>
 <body>
 <div id="wrap">
@@ -77,35 +71,39 @@
 			<div class="col-md-7">
 				
 				<h3>Send us a message and we’ll be in touch soon!</h3>
+
+				<h4 id="error">&nbsp;</h4>	
+
 				
-				<form id="contact-form" method="post" >  
+				<form id="contactform" name="contact-form" >
 					<div class="form-group">
 						<div class="input-group input-group-lg">						
 	  						<span class="input-group-addon width-fix"><i class="fa fa-user"></i></span>
-	  						<input type="text" name="name" id="name" class="form-control" placeholder="Your Name ...">
+	  						<input type="text" name="name" class="form-control" placeholder="Your Name ...">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="input-group input-group-lg">						
 	  						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-	  						<input type="text" name="email" id="email" class="form-control" placeholder="Your Email Address ...">
+	  						<input type="text" name="email" class="form-control" placeholder="Your Email Address ...">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="input-group input-group-lg">						
 	  						<span class="input-group-addon width-fix"><i class="fa fa-building"></i></span>
-	  						<input type="text" name="company" id="company" class="form-control" placeholder="Your Company Name ...">
+	  						<input type="text" name="company" class="form-control" placeholder="Your Company Name ...">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="input-group input-group-lg">						
 	  						<span class="input-group-addon"><i class="fa fa-comment"></i></span>
-	  						<textarea name="message" id="message" class="form-control" placeholder="Your Message ..."></textarea>
+	  						<textarea name="message" class="form-control" placeholder="Your Message ..."></textarea>
 						</div>
 					</div>
-					<div class="pull-right">	
-						<div class="input-group">
-		  					<input class="submit btn btn-primary btn-lg" type="submit" value="Send" />
+
+					<div class="form-group">	
+						<div class="input-group input-group-lg"> 
+							<button  id="submit" class="btn btn-primary btn-lg" >Send</button>
 						</div>
 					</div>	
 				</form>	
