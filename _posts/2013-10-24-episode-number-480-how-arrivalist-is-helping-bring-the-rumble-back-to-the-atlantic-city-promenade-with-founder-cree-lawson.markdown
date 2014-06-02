@@ -6,7 +6,7 @@ comments: true
 categories: news
 tags: untether
 source: //untether.tv/2013/episode-480-how-arrivalist-is-helping-bring-the-rumble-back-to-the-atlantic-city-promenade-with-founder-cree-lawson/
-source_image: /images/untetherlogo.png
+source_image: /images/untetherdarklogo1.png
 ---
 
 **Episode #480**

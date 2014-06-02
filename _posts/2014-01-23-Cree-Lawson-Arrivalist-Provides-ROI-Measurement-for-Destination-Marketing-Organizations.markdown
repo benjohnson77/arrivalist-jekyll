@@ -5,7 +5,7 @@ date: 2014-01-23 15:57
 comments: true
 categories: news
 source: //www.forbes.com/sites/brucerogers/2014/01/23/cree-lawsons-arrivalist-provides-roi-measurement-for-destination-marketing-organizations/
-source_image: /images/Forbes-logo.jpg
+source_image: /images/Forbes_Logo.png
 ---
 
 

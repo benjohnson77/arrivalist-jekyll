@@ -62,7 +62,7 @@ body h1,h2,h3,h4{
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-	background: #4cbcfc url(/images/Arrivalist_home_feature.jpg) 50%;
+	background: #4cbcfc url(/images/ArrivalistSky.jpg) 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -135,8 +135,8 @@ section#overview i {
 
 
 section#news {
-	background:url(/images/news.png) #4cbcfc no-repeat 50%;
-	padding-top: 65px;
+	background:url(/images/news.jpg) #4cbcfc no-repeat 50%;
+	padding-top: 60px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -149,6 +149,7 @@ section#news .jumbotron{
 
 .post-image{
 	padding-top: 10px;
+	height:90px;
 	vertical-align: middle;
 }
 
@@ -177,10 +178,6 @@ section#contact .jumbotron{
 
 section#form textarea{
 	height: 169px;
-}
-
-.submit {
-	z-index: 100;
 }
 
 .location {
