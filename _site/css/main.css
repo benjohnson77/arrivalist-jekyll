@@ -140,7 +140,7 @@ section#overview i {
 
 
 section#news {
-	background:url(/images/news.png) #4cbcfc no-repeat 50%;
+	background:url(/images/news.jpg) #4cbcfc no-repeat 50%;
 	padding-top: 65px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -155,6 +155,7 @@ section#news .jumbotron{
 .post-image{
 	padding-top: 10px;
 	vertical-align: middle;
+	height: 75px;
 }
 
 /* contact us form */
