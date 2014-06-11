@@ -8,8 +8,11 @@ $(document).ready(function() {
       paginationSpeed : 0,
       singleItem: true,
       autoPlay: true,
-      rewindSpeed: 0
+      rewindSpeed: 0,
  
+      pagination : true,
+      paginationNumbers: false,
+
       // "singleItem:true" is a shortcut for:
       // items : 1, 
       // itemsDesktop : false,
