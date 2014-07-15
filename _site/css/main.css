@@ -225,7 +225,7 @@ section#form textarea{
 #footer {
 	background: #21252b;
 	min-height: 90px;
-	color:#bbb;
+	color:#fff;
 	padding-top: 15px;
 	vertical-align: middle;
 	position: relative;
@@ -233,11 +233,17 @@ section#form textarea{
 	height: 100px;
 	clear:both;
 	padding-top:20px;
-	color:#fff;
 }
+
+.copyright {
+	color: #fff
+
+}
+
 
 section#footer p {
 	padding:15px 0px 0px 0px;
+	color: #fff;
 }
 
 section#footer div {
